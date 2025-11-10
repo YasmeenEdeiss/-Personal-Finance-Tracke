@@ -1,0 +1,24 @@
+package model;
+
+public class Category {
+    private String name;
+    private String type; // "Income" أو "Expense"
+
+    public Category(String name, String type) {
+        this.name = name;
+        this.type = type;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    @Override
+    public String toString() {
+        return name + " (" + type + ")";
+    }
+}
